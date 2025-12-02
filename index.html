@@ -1,0 +1,1526 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+
+  <title>Course</title>
+
+  <style>
+    * {
+      font-family: 'cairo';
+    }
+
+    body {
+      height: 10000px;
+    }
+
+    /* تنسيق الحاوية الرئيسية */
+    .youtube-container {
+      position: relative;
+      width: 98%;
+      margin: 20px auto;
+      cursor: pointer;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      /* للحفاظ على نسبة العرض 16:9 */
+      padding: 20px;
+    }
+
+    /* تنسيق الصورة المصغرة (Thumbnail) */
+    .youtube-thumbnail {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: filter 0.3s ease;
+      /* تأثير للتحكم في الإضاءة */
+    }
+
+    .youtube-container:hover .youtube-thumbnail {
+      filter: brightness(80%);
+      /* تغميق الصورة عند مرور الماوس */
+    }
+
+    /* تنسيق زر التشغيل */
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* إنشاء شكل المثلث (أيقونة التشغيل) */
+    .play-button::before {
+      content: '';
+      border-style: solid;
+      border-width: 15px 0 15px 25px;
+      border-color: transparent transparent transparent #ff0000;
+      /* مثلث أحمر */
+      margin-left: 5px;
+      /* لضبط موضع المثلث داخل الدائرة */
+    }
+
+    /* حركة بسيطة (Animation) لزر التشغيل عند مرور الماوس */
+    .youtube-container:hover .play-button {
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+      transform: translate(-50%, -50%) scale(1.1);
+      /* تكبير بسيط */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* تنسيق مشغل يوتيوب الفعلي (سيتم إضافته بواسطة JavaScript) */
+    .youtube-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="coursePg" style="padding-top: 32px;padding-bottom: 32px; ">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8  order-last order-lg-1 "><!-- start content -->
+          <div class="contentCour">
+            <div class="linkCourse" style="margin-top: 20px;">
+              <div class="row"><!-- start row of page link -->
+                <div class="col-md-6">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#" style="text-decoration: none;">دورات ستيب</a></li>
+                      <li class="breadcrumb-item active" aria-current="page" style="color: #acacac;">دورة ستيب عايد
+                        الاساسية
+                        (نوفمبر 2025)</li>
+                    </ol>
+                  </nav>
+                </div><!-- end col md 6 right -->
+                <div class="col-md-6">
+                  <div class="alertTime" style="text-align: center;">
+                    <p
+                      style="background-color: rgb(255, 210, 210,0.3); padding: 10px 30px; color: rgb(114, 3, 3); border-radius: 8px; font-weight: 500; font-size: 14px;">
+                      <img src="images/content/clock (1).png" alt="" srcset="" class="img-fluid" width="24px"
+                        height="24px" style="margin-left: 10px;">
+                      باقي 5 أيام وينتهي عرض الخصم ... بادر بالحجز الان
+                    </p>
+                  </div><!-- end alert time  -->
+                </div><!-- end col md 6 left  -->
+              </div><!-- end row of page link -->
+            </div><!-- end link course -->
+
+            <div class="courseTitle" style="margin-top: 30px;">
+              <h2 style="font-size: 50px; font-weight: 900; color: #003A5E;">ستيب الأساسية - نوفمبر2025</h2>
+              <p style="margin-top: 20px; color: #8a8a8a;">استعد لاختبار ستيب بثقة مع دورة شاملة تغطي المهارات اللغوية
+                الأساسية، بما في ذلك الاستماع، القراءة، القواعد، والمفردات. تشمل الدورة تدريبات مكثفة، اختبارات محاكية
+              </p>
+            </div><!-- end course title -->
+
+            <div class="smDetails">
+
+              <div class="container-fluid" style="margin-top: 10px; color: #003A5E;">
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul
+                      style="list-style: none; padding: 0px; margin-top: 20px; border-left: 1px solid rgb(216, 216, 216);">
+                      <li style="width: 35px;height: 35px;  display: inline-block;">
+                        <img src="images/content/instructor.png" alt="" srcset="" class="img-fluid"
+                          style=" margin-bottom: 20px;">
+                      </li>
+                      <li style="display: inline-block; margin-right: 10px;">
+                        <span style="font-size: 14px; color: #acacac;">المحاضر:</span>
+                        <p style="font-size: 14px; font-weight: 700;">دكتور عايد السطوحي</p>
+                      </li>
+                    </ul>
+                  </div><!-- end col 4 -->
+
+                  <div class="col-md-4">
+                    <ul
+                      style="list-style: none; padding: 0px; margin-top: 20px; border-left: 1px solid rgb(216, 216, 216);">
+                      <li style="width: 35px;height: 35px;  display: inline-block;">
+                        <img src="images/content/system-update.png" alt="" srcset="" class="img-fluid"
+                          style=" margin-bottom: 20px;">
+                      </li>
+                      <li style="display: inline-block; margin-right: 10px;">
+                        <span style="font-size: 14px; color: #acacac">أخر تحديث:</span>
+                        <p style="font-size: 18px; font-weight: 700;">2025-12-06
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style=" margin-top: 20px;">
+                    <ul style="list-style: none; padding: 0px;">
+                      <li style="width: 35px;height: 35px;  display: inline-block;">
+                        <img src="images/content/rate.png" alt="" srcset="" class="img-fluid"
+                          style=" margin-bottom: 20px;">
+                      </li>
+                      <li style="display: inline-block; margin-right: 10px;">
+                        <span style="font-size: 14px; color: #acacac">التقييمات:</span>
+                        <p style="font-size: 14px; ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="#FFD700">
+                            <path
+                              d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.903 1.48-8.279L.332 9.306l8.332-1.151z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="#FFD700">
+                            <path
+                              d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.903 1.48-8.279L.332 9.306l8.332-1.151z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="#FFD700">
+                            <path
+                              d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.903 1.48-8.279L.332 9.306l8.332-1.151z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="#FFD700">
+                            <path
+                              d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.903 1.48-8.279L.332 9.306l8.332-1.151z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            fill="#FFD700">
+                            <path
+                              d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.903 1.48-8.279L.332 9.306l8.332-1.151z" />
+                          </svg>
+
+                          <span style="color: #8a8a8a; margin-right: 15px; font-size: 22px;">5.0</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div><!-- row -->
+              </div><!-- end container -->
+
+              <hr style="color: #acacac;">
+
+              <div class="alertMessage"
+                style="background-color: rgb(255, 255, 184);  border-radius: 8px; padding: 30px 20px;">
+                <div class="row align-items-center">
+                  <div class="col-md-2 d-none d-lg-block">
+                    <div class="iconAlert"
+                      style="width: 100%; text-align: center; border-left: 1px solid rgb(103, 103, 1,0.2); line-height: 50px;">
+                      <img src="images/coo/emergency.png" alt="" srcset="" class="img-fluid" width="50" height="50">
+                    </div> <!-- end icon alert -->
+                  </div><!-- end col 3 -->
+                  <div class="col-md-10">
+                    <h5 style="font-weight: 700; color: rgb(99, 99, 3); margin-bottom: 0px;">ارشادات قبل الاشتراك في
+                      الدورة:</h5>
+                    <ul style="margin-bottom: 0px;margin-top: 10px;">
+                      <li style="font-size: 14px; color: rgb(99, 99, 3);"> يفضل ان يكون الاختبار بعد انتهاء فترة الشرح
+                        بفترة من اسبوعين لشهر.</li>
+                      <li style="font-size: 14px; color: rgb(99, 99, 3);"> يفضل لو مستواك اقل من مبتدأ ان تتواصل مع خدمة
+                        الدعم الفني على الرقم 920019606 لتحديد مستواك.</li>
+                    </ul>
+                  </div><!-- end col 9 -->
+                </div><!-- end rooow -->
+              </div><!-- end alert message -->
+
+              <!-- ==================        هنا محتوى الدورة والتفاصيل كامله           =========================== -->
+              <div class="contenty" style="margin-top: 60px;">
+                <nav style="overflow: auto;"><!-- بداية ازرار التاب المحتوى -->
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                    <button class="nav-link active" id="nav-glob-tab" data-bs-toggle="tab" data-bs-target="#nav-glob"
+                      type="button" role="tab" aria-controls="nav-glob" aria-selected="true">نظرة عامة </button>
+
+                    <button class="nav-link" id="nav-lec-tab" data-bs-toggle="tab" data-bs-target="#nav-lec"
+                      type="button" role="tab" aria-controls="nav-lec" aria-selected="false">جدول المحاضرات</button>
+
+                    <button class="nav-link" id="nav-exam-tab" data-bs-toggle="tab" data-bs-target="#nav-exam"
+                      type="button" role="tab" aria-controls="nav-exam" aria-selected="false">الاختبارات
+                      المجانية</button>
+
+                    <button class="nav-link" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#nav-list"
+                      type="button" role="tab" aria-controls="nav-list" aria-selected="false">  محتوى الدورة</button>
+
+                    <button class="nav-link" id="nav-result-tab" data-bs-toggle="tab" data-bs-target="#nav-result"
+                      type="button" role="tab" aria-controls="nav-result" aria-selected="false"> نتائج الطلاب</button>
+
+                    <button class="nav-link" id="nav-ques-tab" data-bs-toggle="tab" data-bs-target="#nav-ques"
+                      type="button" role="tab" aria-controls="nav-ques" aria-selected="false"> الاسئلة
+                      الشائعة</button>
+
+                  </div>
+                </nav><!-- نهاية ازرار التاب المحتوى -->
+
+                <!--============== بداية السكشن المحتوى تحت التابات  ==================-->
+                <div class="tab-content" id="nav-tabContent" style="margin-top: 50px; color: #003A5E;">
+
+
+                  <!-- ============= بداية نظرة عامة ============ -->
+                  <div class="tab-pane fade show active" id="nav-glob" role="tabpanel" aria-labelledby="nav-glob-tab">
+                    <div class="row">
+                      <h4 style="font-weight: 800;">هل تحلم بتحقيق درجات مرتفعة في اختبار STEP؟</h4>
+                      <p>مع دورة STEP الأساسية (دورة الخمسين نموذج) من أكاديمية عايد لشهر ديسمبر، نمنحك الأساس القوي
+                        والمهارات العملية التي تجعل اجتياز اختبار STEP أسهل مما تتخيل!</p>
+                      <h5 style="font-weight: 800; margin-top: 20px;">تعرف على دورة STEP من أكاديمية عايد .. شاهد
+                        الفيديو التالي:</h5>
+                      <!-- start video play  -->
+                      <div class="youtube-container" data-videoid="FcZtUX2f0Qo">
+                        <div class="youtube-thumbnail">
+                          <div class="play-button"></div>
+                        </div>
+                      </div>
+                      <!-- end video play  -->
+
+                      <h5 style="font-weight: 800; margin-top: 20px;">مميزات دورة STEP الأساسية (دورة الخمسين نموذج):
+                      </h5>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">1- 15 محاضرة تعليمية شاملة:</h6>
+                      <p style="margin-top: 10px;">
+                        تغطي جميع محاور اختبار STEP وتشمل:
+                      <ul style="margin-right: 20px; border-right: 1px solid rgb(230, 230, 230); list-style: none;">
+                        <li style="list-style-position: inside;">القراءة</li>
+                        <li style="list-style-position: inside;">الاستماع</li>
+                        <li style="list-style-position: inside;"> القواعد</li>
+                        <li style="list-style-position: inside;"> استراتيجيات الحل المبسط</li>
+                      </ul>
+                      <span>مع شرح دقيق ومركّز يضمن لك فهمًا عميقًا لكل قسم من أقسام الاختبار.</span>
+                      </p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">2- تدريب مع نخبة من الخبراء:</h6>
+                      <p>يقدّم الدورة د. عايد السطوحي، بمشاركة المدرس المساعد، لضمان تجربة تعليمية ثرية ومميزة.</p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">3- مرونة الوصول والمراجعة:</h6>
+                      <p> جميع المحاضرات مسجّلة ومتاحة في حسابك لمدة 3 أشهر كاملة (90 يومًا) من تاريخ التسجيل، لتتمكن من
+                        المراجعة في الوقت والمكان الذي يناسبك. </p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">4- اختبارات محاكية و50 نموذجًا تدريبيًا حقيقيًا:
+                      </h6>
+                      <p> احصل على تجربة اختبار واقعية مع خمسين نموذجًا محاكيًا لاختبار STEP، لتتدرّب على أنماط الأسئلة
+                        الفعلية وتكتسب الثقة قبل يوم الاختبار.</p>
+
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">5- خطة دراسية مخصصة لك:</h6>
+                      <p> يُعد لك مستشارك التدريبي خطة مذاكرة شخصية تتوافق مع مستواك وأهدافك.</p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">6- ملف الكلمات المتكررة في اختبار STEP:</h6>
+                      <p> يشمل أكثر من 1300 كلمة أساسية لتعزيز المفردات وتحسين مهارات القراءة والفهم.</p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">7- نماذج وأسئلة متكررة وشروحات احترافية:</h6>
+                      <p> تتدرّب على الأسئلة الأكثر ورودًا في الاختبار مع استراتيجيات فعّالة وشروحات مبسّطة لضمان الفهم
+                        الكامل.</p>
+
+                      <h6 style="font-weight: 800; margin-top: 20px;">8- متابعة دقيقة لأدائك:</h6>
+                      <p> تشمل الدورة:</p>
+                      <table class="table table-bordered "
+                        style="color: #003A5E; width: 95%; margin-left: auto; margin-right: auto;">
+
+                        <tbody>
+                          <tr>
+                            <td style=" padding: 20px; text-align: center;">
+                              <img src="images/coo/analysis.png" alt="" srcset="" class="img-fluid" width="50px"
+                                height="50px">
+                            </td>
+                            <td style=" padding: 30px;">تقرير أسبوعي لمستواك</td>
+
+                          </tr>
+                          <tr>
+                            <td style=" padding: 20px; text-align: center;">
+                              <img src="images/coo/exam (3).png" alt="" srcset="" class="img-fluid" width="50px"
+                                height="50px">
+                            </td>
+                            <td style=" padding: 30px; "> اختبار تقييم مرحلي</td>
+
+                          </tr>
+                          <tr>
+                            <td style=" padding: 20px; text-align: center;">
+                              <img src="images/coo/statistics (1).png" alt="" srcset="" class="img-fluid" width="50px"
+                                height="50px">
+                            </td>
+                            <td style=" padding: 30px;">حليل دقيق لنقاط القوة والضعف لتطوير مستواك باستمرار</td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h5 style="font-weight: 800; margin-top: 20px;"> لماذا تختار دورة STEP الأساسية من أكاديمية عايد؟
+                      </h5>
+                      <p>
+                      <ul>
+                        <li style="list-style-position: inside;">
+                          <span style="font-weight: 800;">تغطية شاملة: </span> كل ما تحتاجه لاجتياز اختبار كفايات اللغة
+                          الإنجليزية في دورة واحدة متكاملة.
+                        </li>
+                        <li style="list-style-position: inside; margin-top: 6px;">
+                          <span style="font-weight: 800;"> دعم ومتابعة مستمرة: </span> اختبارات تقييمية قبل وأثناء وبعد
+                          الدورة لضمان تقدمك.
+                        </li>
+                        <li style="list-style-position: inside; margin-top: 6px;">
+                          <span style="font-weight: 800;"> نتائج مضمونة: </span> تدريب عملي واستراتيجيات مدروسة لرفع
+                          درجاتك بثقة.
+                        </li>
+                      </ul>
+                      </p>
+
+                    </div><!-- end row -->
+                    <hr style="color: #acacac; margin-top: 30px; margin-bottom: 30px;">
+                    <!-- <div class="row">
+                       <a href="#" style="background-color: #ff9900; padding: 20px; width: 100%; color: #003A5E; text-align: center; text-decoration: none; font-size: 20px; font-weight: 800; margin-top: 30px; border-radius: 8px; width: 95%; margin-left: auto; margin-right: auto;">اشترك الأن و لا تفوّت الفرصة!</a>
+                    </div> -->
+                    <!-- =============== بداية مميزات اشتراك في عايد ===================-->
+                    <div class="ourFeatures"
+                      style="margin-top: 20px; border: 1px solid rgb(224, 224, 224); padding: 20px;border-radius: 8px; position: relative;">
+                      <img src="images/coo/feature.png" alt="" srcset="" class="img-fluid"
+                        style="width: 100px; height: 100px; position: absolute; top: 20xp; left: 20px;">
+                      <div class="row align-items-center">
+                        <h5 style="font-weight: 700; margin-bottom: 0px;">مميزات الاشتراك لدينا؟</h5>
+                        <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                          style="width: 200px; margin-top: 10px;">
+                        <ul style="margin-bottom: 0px; list-style: none; margin-top: 20px;">
+                          <li>
+                            <img src="images/coo/customer-service (2).png" alt="" srcset="" width="35" height="35"
+                              style="margin-left: 10px; ">
+                            <span>تواصل ودعم فني على مدار الساعة ومتابعة حتى موعد اختبارك</span>
+
+                          </li>
+                          <li style="margin-top: 20px;">
+                            <img src="images/coo/meeting.png" alt="" srcset="" width="35" height="35"
+                              style="margin-left: 10px;">
+                            <span> قروب مناقشات مع المدربين للإجابة على كافة استفساراتك</span>
+
+                          </li>
+                          <li style="margin-top: 20px;">
+                            <img src="images/coo/live.png" alt="" srcset="" width="35" height="35"
+                              style="margin-left: 10px; ">
+                            <span>الدورة لايف ( بث مباشر ) على تطبيق زووم وتسجل المحاضرات للرجوع إليها وقتما شئت وتظل
+                              بحسابك لمدة ٩٠ يوم</span>
+                          </li>
+                          <li style="margin-top: 20px;">
+                            <img src="images/coo/operation.png" alt="" srcset="" width="35" height="35"
+                              style="margin-left: 10px; ">
+                            <span>إمكانية الدفع الأونلاين، مع التفعيل الفوري للاشتراك الخاص بك دون الانتظار.</span>
+                          </li>
+                        </ul>
+
+                      </div>
+
+                    </div><!-- end our features -->
+                  </div>
+                  <!-- ============= نهاية نظرة عامة ============ -->
+
+                  <!-- ============= بداية جدول المحاضرات ============ -->
+                  <div class="tab-pane fade" id="nav-lec" role="tabpanel" aria-labelledby="nav-lec-tab">
+                    <div class="tableLecure text-center">
+                      <div class="row">
+                        <div class="titleTable">
+                          <h4 style="font-weight: 800; font-size: 30px;">
+                            <!-- <img src="images/lec/calendar (1).png" alt="" srcset="" class="img-fluid" style="width: 40px; height: 40px; margin-left: 10px; "> -->
+                            جدول المحاضرات
+                          </h4>
+                          <div class="linn">
+                            <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                              style="width: 250px;">
+                          </div><!-- end linn -->
+                          <p
+                            style="margin-top: 20px; width: 60%; text-align: center; margin-left: auto; margin-right: auto;">
+                            اكتشف جميع محاضرات الدورة وتابع تقدمك خطوة بخطوة. حمل الجدول الآن لتبقى منظمًا ومتابعًا لكل
+                            المحاضرات.
+                          </p>
+                        </div><!-- end title table -->
+                      </div><!--end row -->
+
+                      <div class="iconnes" style="margin-top: 50px;">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="essential" style="margin-top: 10px;">
+                              <img src="images/lec/start.png" alt="" class="img-fluid"
+                                style="width: 70px; height: 70px;">
+                              <h5 style="margin-top: 20px; font-weight: 800;">الأساسيات</h5>
+                            </div><!-- end  essential -->
+                          </div><!-- end col essential -->
+                          <div class="col-md-4">
+                            <div class="essential" style="margin-top: 30px;">
+                              <img src="images/lec/training.png" alt="" class="img-fluid"
+                                style="width: 70px; height: 70px;">
+                              <h5 style="margin-top: 20px; font-weight: 800;">التطبيق</h5>
+                            </div><!-- end  essential -->
+                          </div><!-- end col two -->
+                          <div class="col-md-4">
+                            <div class="essential" style="margin-top: 10px; ">
+                              <img src="images/lec/trend.png" alt="" class="img-fluid"
+                                style="width: 70px; height: 70px;">
+                              <h5 style="margin-top: 20px; font-weight: 800;">التحليل</h5>
+                            </div><!-- end  three -->
+                          </div>
+                        </div><!-- end row -->
+                        <div class="row">
+                          <a href="#"
+                            style=" width: 300px; background-color: #003A5E; color: white; text-decoration: none; padding: 15px 40px; margin-top: 80px; border-radius: 8px; margin-left: auto; margin-right: auto;">
+                            <img src="images/lec/download.png" alt="" srcset="" class="img-fluid"
+                              style="width: 30px; height: 30px; margin-left: 10px;">
+                            حمل الجدول المحاضرات
+                          </a>
+                        </div><!-- end row -->
+
+                        <div class="iluustration">
+                          <div class="row">
+                            <img src="images/lec/illusr01.png" alt="" srcset="" class="img-fluid">
+                          </div><!-- end row-->
+                        </div><!-- illustration-->
+                      </div><!-- end iconnes -->
+                    </div><!-- end table lecture -->
+                  </div>
+                  <!-- ============= نهاية جدول المحاضرات ============ -->
+
+                  <!-- ============= بداية الاختبارات المجانية ============ -->
+                  <div class="tab-pane fade" id="nav-exam" role="tabpanel" aria-labelledby="nav-exam-tab">
+
+                    <!-- ========== start exam card ============= -->
+                    <div class="examss">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="titleTable" style="text-align: center;">
+                            <h4 style="font-weight: 800; font-size: 30px;">
+                              <!-- <img src="images/lec/calendar (1).png" alt="" srcset="" class="img-fluid" style="width: 40px; height: 40px; margin-left: 10px; "> -->
+                              الاختبارات المجانية
+                            </h4>
+                            <div class="linn">
+                              <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                                style="width: 250px;">
+                            </div><!-- end linn -->
+                            <p
+                              style="margin-top: 20px; width: 60%; text-align: center; margin-left: auto; margin-right: auto;">
+                              هناك اختبارات اخرى عند الاشتراك بالدورة لتقييم مستواك وتجهيزك للأختبار.
+
+                            </p>
+                          </div><!-- end title table -->
+                        </div><!--end row -->
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="cardExam" style="
+                                             margin-top: 20px;
+        padding: 20px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        margin-bottom: 20px;
+                                  ">
+                              <div class="examIcon" style="
+                                           background-color: rgb(255, 243, 222, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+                                  ">
+                                <img src="images/lec/exam (1).png" alt="" class="img-fluid" style="
+                                        width: 40%;
+                                        height: 40%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        text-align: center;
+                                        display: block;
+                                      " />
+                              </div>
+                              <!-- end exam icon -->
+                              <div class="examTitle" style="
+                                  
+                                            margin-top: 20px;
+        margin-bottom: 20px;
+                                  
+                                  ">
+                                <h5 style="
+                                    
+                                            color: #0b3a5e;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        line-height: 28px;
+                                    
+                                    ">إختبار (01) تحديد المستوى (ستيب)</h5>
+                              </div>
+                              <!-- end exam title -->
+                              <ul class="detailexam" style="
+                                          list-style: none;
+        display: flex;
+        margin-top: 30px;
+        padding: 0px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+                                  
+                                  ">
+                                <li style="flex: 3;
+                                     text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-content: center;
+                                    ">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">40</span>
+                                  <img src="images/conversation.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">عدد الاسئلة</span>
+                                </li>
+                                <li style="color: #c5c3c3; flex: 1">|</li>
+                                <li style="flex: 3">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">90</span>
+                                  <img src="images/stopwatch.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">وقت الاختبار
+                                  </span>
+                                </li>
+                              </ul>
+
+                              <div class="btnExam">
+                                <button class="btn" style="
+                                       background-color: orange;
+                                      color: #0b3a5e;
+                                      width: 100%;
+                                      font-weight: 700;
+                                      margin-top: 20px;
+                                      transition: all 0.6s;
+                                      ">ابدء الاختبار</button>
+                              </div>
+                              <!-- end button exam-->
+                            </div>
+                            <!-- end card exam -->
+                          </div>
+                          <!-- end col lg 3 -->
+                          <div class="col-lg-4">
+                            <div class="cardExam" style="
+                                             margin-top: 20px;
+        padding: 20px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        margin-bottom: 20px;
+                                  ">
+                              <div class="examIcon" style="
+                                           background-color: rgb(255, 243, 222, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+                                  ">
+                                <img src="images/lec/exam (1).png" alt="" class="img-fluid" style="
+                                        width: 40%;
+                                        height: 40%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        text-align: center;
+                                        display: block;
+                                      " />
+                              </div>
+                              <!-- end exam icon -->
+                              <div class="examTitle" style="
+                                  
+                                            margin-top: 20px;
+        margin-bottom: 20px;
+                                  
+                                  ">
+                                <h5 style="
+                                    
+                                            color: #0b3a5e;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        line-height: 28px;
+                                    
+                                    ">إختبار (02) تحديد المستوى (ستيب)</h5>
+                              </div>
+                              <!-- end exam title -->
+                              <ul class="detailexam" style="
+                                          list-style: none;
+        display: flex;
+        margin-top: 30px;
+        padding: 0px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+                                  
+                                  ">
+                                <li style="flex: 3;
+                                     text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-content: center;
+                                    ">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">40</span>
+                                  <img src="images/conversation.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">عدد الاسئلة</span>
+                                </li>
+                                <li style="color: #c5c3c3; flex: 1">|</li>
+                                <li style="flex: 3">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">90</span>
+                                  <img src="images/stopwatch.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">وقت الاختبار
+                                  </span>
+                                </li>
+                              </ul>
+
+                              <div class="btnExam">
+                                <button class="btn" style="
+                                       background-color: orange;
+                                      color: #0b3a5e;
+                                      width: 100%;
+                                      font-weight: 700;
+                                      margin-top: 20px;
+                                      transition: all 0.6s;
+                                      ">ابدء الاختبار</button>
+                              </div>
+                              <!-- end button exam-->
+                            </div>
+                            <!-- end card exam -->
+                          </div>
+                          <!-- end col lg 3 -->
+                          <div class="col-lg-4">
+                            <div class="cardExam" style="
+                                             margin-top: 20px;
+        padding: 20px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        margin-bottom: 20px;
+                                  ">
+                              <div class="examIcon" style="
+                                           background-color: rgb(255, 243, 222, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+                                  ">
+                                <img src="images/lec/exam (1).png" alt="" class="img-fluid" style="
+                                        width: 40%;
+                                        height: 40%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        text-align: center;
+                                        display: block;
+                                      " />
+                              </div>
+                              <!-- end exam icon -->
+                              <div class="examTitle" style="
+                                  
+                                            margin-top: 20px;
+        margin-bottom: 20px;
+                                  
+                                  ">
+                                <h5 style="
+                                    
+                                            color: #0b3a5e;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        line-height: 28px;
+                                    
+                                    ">إختبار (03) تحديد المستوى (ستيب)</h5>
+                              </div>
+                              <!-- end exam title -->
+                              <ul class="detailexam" style="
+                                          list-style: none;
+        display: flex;
+        margin-top: 30px;
+        padding: 0px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+                                  
+                                  ">
+                                <li style="flex: 3;
+                                     text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        align-content: center;
+                                    ">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">60</span>
+                                  <img src="images/conversation.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">عدد الاسئلة</span>
+                                </li>
+                                <li style="color: #c5c3c3; flex: 1">|</li>
+                                <li style="flex: 3">
+                                  <span style="
+                                          color: orange;
+                                          font-size: 20px;
+                                          margin-left: 3px;
+                                          font-weight: 800;
+                                        ">90</span>
+                                  <img src="images/stopwatch.png" alt="" srcset="" class="img-fluid" style="
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-top: -10px;
+                                        " />
+                                  <br />
+                                  <span style="color: #9a9b9b; font-size: 14px">وقت الاختبار
+                                  </span>
+                                </li>
+                              </ul>
+
+                              <div class="btnExam">
+                                <button class="btn" style="
+                                       background-color: orange;
+                                      color: #0b3a5e;
+                                      width: 100%;
+                                      font-weight: 700;
+                                      margin-top: 20px;
+                                      transition: all 0.6s;
+                                      ">ابدء الاختبار</button>
+                              </div>
+                              <!-- end button exam-->
+                            </div>
+                            <!-- end card exam -->
+                          </div>
+                          <!-- end col lg 3 -->
+                        </div>
+                        <!-- end row -->
+                      </div>
+                      <!-- container-->
+                    </div>
+                    <!-- end exams-->
+                    <!--========== end exam card ================ -->
+
+                    <div class="iluustr">
+                      <div class="row">
+                        <img src="images/Gemini_Generated_Image_xutzudxutzudxutz.png" alt="" srcset=""
+                          class="img-fluid">
+                      </div>
+                    </div><!-- end illustr-->
+
+                  </div>
+                  <!-- ============= نهاية الاختبارات المجانية ============ -->
+
+                  <!-- ============= بداية محتوى الدورة ============ -->
+                      
+
+                  <div class="tab-pane fade" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab" style="color: #003A5E;">
+
+                      <div class="row">
+                          <div class="titleTable" style="text-align: center;">
+                            <h4 style="font-weight: 800; font-size: 30px;">
+                              <!-- <img src="images/lec/calendar (1).png" alt="" srcset="" class="img-fluid" style="width: 40px; height: 40px; margin-left: 10px; "> -->
+                              محتوى الدورة 
+                            </h4>
+                            <div class="linn">
+                              <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                                style="width: 250px;">
+                            </div><!-- end linn -->
+                            <p
+                              style="margin-top: 20px; width: 60%; text-align: center; margin-left: auto; margin-right: auto;">
+                             4 من الأقسام • 19 من المحاضرات • إجمالي المدة 41 س 33 د
+
+                            </p>
+                          </div><!-- end title table -->
+                        </div><!--end row -->
+<!-- ================================================================== -->
+                    <div class="accordion" id="accordionExample" style="color: #003A5E;">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <ul style="list-style: none; margin-bottom: 0px; display: flex; padding-right: 0px; width: 100%;">
+                              <li style=" font-size: 18px; flex: 1;">محاضرات قسم القرامر</li>
+                               <li style=" font-size: 12px; flex: 1; color: rgb(141, 141, 141); text-align: left; margin-left: 20px; margin-top: 4px;">4 محاضرات - 3 ساعات و20 دقيقة</li>
+                            </ul>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           <div class="listPlay" style="border: 1px solid rgb(193, 193, 193); padding: 20px; background-color: #fbfbfb;">
+                             <div class="row">
+                               <div class="col-md-9">
+
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  مقدمة عن دورة ستيب عايد</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:51:02</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                                <hr style="color: #9a9b9b;">
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرةالأولى (شرح القاعدة الأولى - قاعدة الازمنة)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:26:12</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- =================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرة الثانية ( شرح القاعدة الثانية - قاعدة IF)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:33:18</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  المحاضرة الثالثة (شرح القاعدة الثالثة - قاعدة الافعال)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:24:30</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-12">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/pdf-file.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                               ملف الاسئله الاكثر تكرارا - القطع الأكثر تكرارا غير محلول</p>
+                               </div><!-- end col 8 -->
+
+                             </div><!-- end row -->
+                             <!-- ======================================== -->
+                           </div><!-- end list play -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <ul style="list-style: none; margin-bottom: 0px; display: flex; padding-right: 0px; width: 100%;">
+                              <li style=" font-size: 18px; flex: 1;">محاضرات قسم الريدينق</li>
+                               <li style=" font-size: 12px; flex: 1; color: rgb(141, 141, 141); text-align: left; margin-left: 20px; margin-top: 4px;">4 محاضرات - 3 ساعات و20 دقيقة</li>
+                            </ul>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                             <div class="listPlay" style="border: 1px solid rgb(193, 193, 193); padding: 20px; background-color: #fbfbfb;">
+                             <div class="row">
+                               <div class="col-md-9">
+
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  مقدمة عن دورة ستيب عايد</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:51:02</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                                <hr style="color: #9a9b9b;">
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرةالأولى (شرح القاعدة الأولى - قاعدة الازمنة)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:26:12</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- =================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرة الثانية ( شرح القاعدة الثانية - قاعدة IF)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:33:18</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  المحاضرة الثالثة (شرح القاعدة الثالثة - قاعدة الافعال)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:24:30</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-12">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/pdf-file.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                               ملف الاسئله الاكثر تكرارا - القطع الأكثر تكرارا غير محلول</p>
+                               </div><!-- end col 8 -->
+
+                             </div><!-- end row -->
+                             <!-- ======================================== -->
+                           </div><!-- end list play -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <ul style="list-style: none; margin-bottom: 0px; display: flex; padding-right: 0px; width: 100%;">
+                              <li style=" font-size: 18px; flex: 1;">محاضرات قسم اللسنيق</li>
+                               <li style=" font-size: 12px; flex: 1; color: rgb(141, 141, 141); text-align: left; margin-left: 20px; margin-top: 4px;">4 محاضرات - 3 ساعات و20 دقيقة</li>
+                            </ul>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                             <div class="listPlay" style="border: 1px solid rgb(193, 193, 193); padding: 20px; background-color: #fbfbfb;">
+                             <div class="row">
+                               <div class="col-md-9">
+
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  مقدمة عن دورة ستيب عايد</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:51:02</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                                <hr style="color: #9a9b9b;">
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرةالأولى (شرح القاعدة الأولى - قاعدة الازمنة)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:26:12</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- =================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                 المحاضرة الثانية ( شرح القاعدة الثانية - قاعدة IF)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:33:18</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                 <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-9">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/play (1).png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                                  المحاضرة الثالثة (شرح القاعدة الثالثة - قاعدة الافعال)</p>
+                               </div><!-- end col 8 -->
+                               <div class="col-md-3 text-end">
+                                 <p style="margin-bottom: 0px; color: #bfbfbf;">
+                                   <img src="images/sto.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 3px; margin-bottom: 0px;">
+                                  00:24:30</p>
+                               </div><!-- end col 3 -->
+                             </div><!-- end row -->
+                             <hr>
+                             <!-- ======================================== -->
+                                <div class="row" style="margin-top: 10px;">
+                               <div class="col-md-12">
+                                <p style="margin-bottom: 0px;">
+                                <img src="images/pdf-file.png" alt="" srcset="" class="img-fluid" width="24px" height="24px" style="text-align: left; margin-left: 5px; margin-bottom: 0px;">
+                               ملف الاسئله الاكثر تكرارا - القطع الأكثر تكرارا غير محلول</p>
+                               </div><!-- end col 8 -->
+
+                             </div><!-- end row -->
+                             <!-- ======================================== -->
+                           </div><!-- end list play -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <!-- ============= نهاية محتوى الدورة ============ -->
+
+                  <!-- ============= بداية نتائج الطلاب ============ -->
+                  <div class="tab-pane fade" id="nav-result" role="tabpanel" aria-labelledby="nav-result-tab">
+
+                        <div class="row">
+                          <div class="titleTable" style="text-align: center;">
+                            <h4 style="font-weight: 800; font-size: 30px;">
+                              <!-- <img src="images/lec/calendar (1).png" alt="" srcset="" class="img-fluid" style="width: 40px; height: 40px; margin-left: 10px; "> -->
+                               نتائج الطلاب 
+                            </h4>
+                            <div class="linn">
+                              <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                                style="width: 250px;">
+                            </div><!-- end linn -->
+                            <p
+                              style="margin-top: 20px; width: 60%; text-align: center; margin-left: auto; margin-right: auto;">
+                            نقدم لكم بعض من نتائج طلابنا ونفتخر بنجاحهم
+
+                            </p>
+                          </div><!-- end title table -->
+                        </div><!--end row -->
+
+                        <div class="sliderr" style="margin-top: 30px;">
+                          <div class="row">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="images/01.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="images/03.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="images/05.webp" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #003A5E; margin-left: 20px;" ></span>
+                                <span class="visually-hidden" >Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #003A5E ;padding-top: 20px; padding-bottom: 20px; margin-right: 20px;" ></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div><!-- end row -->
+                        </div><!-- end slider -->
+                  </div>
+                  <!-- ============= نهاية نتائج الطلاب ============ -->
+
+                  <!-- ============= بداية الاسئلة الشائعة ============ -->
+                  <div class="tab-pane fade" id="nav-ques" role="tabpanel" aria-labelledby="nav-ques-tab">
+
+                      <div class="row">
+                          <div class="titleTable" style="text-align: center;">
+                            <h4 style="font-weight: 800; font-size: 30px;">
+                              <!-- <img src="images/lec/calendar (1).png" alt="" srcset="" class="img-fluid" style="width: 40px; height: 40px; margin-left: 10px; "> -->
+                               الاسئلة الشائعة
+                            </h4>
+                            <div class="linn">
+                              <img src="images/coo/Asset 2@4x.png" alt="" srcset="" class="img-fluid"
+                                style="width: 250px;">
+                            </div><!-- end linn -->
+                            <p
+                              style="margin-top: 20px; width: 60%; text-align: center; margin-left: auto; margin-right: auto;">
+                           مجموعة من الاسئلة الشائعة في الدورة والاجابة عليها
+                            </p>
+                          </div><!-- end title table -->
+                        </div><!--end row -->
+<!-- ============================================================================ -->
+<div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 50px;">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+ماهو اختبار ستيب؟
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">هو اختصار لعبارة "Standardized Test of English Proficiency"، ويهدف إلى قياس كفايات اللغة الإنجليزية وفقًا للإطار الأوروبي CEFR.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+كيف يمكن الاستفادة من اختبار ستيب؟      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">يُستخدم في القبول الجامعي، التعيينات المهنية، برامج الدراسات العليا، السفر للخارج، المنح الدراسية، والإعفاء من بعض الدورات.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+متى يمكن الاختبار في ستيب ؟      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">يمكن التسجيل في أي وقت على مدار العام من خلال الموقع الرسمي للمركز.
+</div>
+    </div>
+  </div>
+</div>
+<!-- ============================================================================ -->
+                  </div>
+                  <!-- ============= نهاية الاسئلة الشائعة ============ -->
+
+                </div><!-- end tab content -->
+                <!--============== نهاية السكشن المحتوى تحت التابات  ==================-->
+
+              </div><!-- end contenty-->
+              <!-- ==================        نهاية محتوى الدورة والتفاصيل كامله           =========================== -->
+
+            </div><!-- end details -->
+
+          </div> <!-- end contentCour -->
+        </div><!-- end col lg 8 -->
+
+        <div class="col-lg-4 order-1 order-lg-2 "> <!-- start card buy -->
+          <div class="boxBuy"
+            style="width: 100%; border: 1px solid rgb(224, 224, 224); padding: 20px; margin-top: 10px; border-radius: 8px;">
+            <div class="boxImg">
+              <img src="images/دورة_ستيب_عايد_الاساسية.webp" alt="" srcset="" class="img-fluid"
+                style=" border-radius: 4px;">
+            </div><!-- end box img -->
+
+            <div class="boxPrice">
+              <ul style="list-style: none; text-align: center; margin-top: 20px; margin-bottom: 20px; padding: 0px;">
+                <li>
+                  <p style="font-size: 28px; font-weight: 700; color: #ff9900;">
+                    <s
+                      style="margin-left: 10px; color: rgb(188, 186, 186); font-size: 16px; font-weight: 400;">500.00</s>
+                    350.00
+                    ر.س
+                  </p>
+                </li>
+                <li style=" padding: 5px; text-align: center;">
+                  <span style="color: rgb(83, 178, 116); background-color: rgb(214, 254, 228,0.4); padding: 5px 20px;">
+                    خصم بنسبة 25%
+                  </span>
+                </li>
+              </ul>
+            </div><!-- end box price -->
+
+            <div class="buyButton">
+              <a href=""
+                style="width: 100%; padding: 15px; background-color: #ff9900; color: #003A5E; display: block; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 30px; margin-bottom: 20px;">اشتري
+                الان</a>
+            </div><!-- end buy button -->
+            <hr style="color: rgb(218, 218, 218); margin-top: 20px; margin-bottom: 20px;">
+            <div class="coupony">
+              <h6 style="margin-top:20px; margin-bottom: 20px; color: #003A5E;">هل لديك كوبون خصم؟</h6>
+              <p
+                style="color: rgb(176, 175, 175); background-color: rgb(221, 221, 221,0.2); font-size: 14px; padding: 10px 20px;">
+                تم تطبيق كوبون الخصم هذا CP251129CMG4</p>
+              <ul style="list-style: none; display: flex; padding: 0px;">
+                <li style="flex: 3;">
+                  <input type="text" placeholder="ادخل كوبون الخصم"
+                    style="width: 95%; padding: 10px; border: 1px dashed rgb(216, 216, 216); border-radius: 8px;">
+                </li>
+                <li style="flex: 1;">
+                  <button
+                    style="background-color: #003A5E; color: white; padding: 10px; width: 100%; border-radius: 8px;">طبق</button>
+                </li>
+              </ul>
+            </div><!-- end coupony -->
+
+            <hr style="color: rgb(218, 218, 218); margin-top: 20px; margin-bottom: 20px;">
+
+            <div class="courseContent">
+              <h6 style="margin-top:30px;  margin-bottom: 20px; color: #003A5E;"> الكورس يشتمل على :</h6>
+              <ul style="list-style: none; padding: 0px;">
+
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/volume-control.png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    مستوى الدورة
+
+                  </span>
+                  <span style="flex: 1; text-align: left;color: #299ae0;">المستوى الاول</span>
+                </li>
+
+
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/video.png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    عدد المحاضرات
+
+                  </span>
+                  <span style="flex: 1; text-align: left; color: #299ae0;">20</span>
+                </li>
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/stopwatch.png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    مدة الاشتراك
+
+                  </span>
+                  <span style="flex: 1; text-align: left; color: #299ae0;">90 يوم</span>
+                </li>
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/language.png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    لغة الدورة
+
+                  </span>
+                  <span style="flex: 1; text-align: left; color: #299ae0;">العربية</span>
+                </li>
+
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/test (1).png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    عدد الاختبارات
+
+                  </span>
+                  <span style="flex: 1; text-align: left; color: #299ae0;">06</span>
+                </li>
+
+                <li
+                  style="color: #003A5E; display: flex; background-color: rgb(231, 231, 231,0.2); padding: 5px 20px; margin-bottom: 10px;">
+
+                  <span style="flex: 2;">
+                    <img src="images/attach-file.png" alt="" srcset="" class="img-fluid"
+                      style="width: 22px; height: 22x; margin-left: 10px;">
+                    عدد الملفات
+
+                  </span>
+                  <span style="flex: 1; text-align: left; color: #299ae0;">05</span>
+                </li>
+
+              </ul>
+            </div><!-- end course content -->
+
+            <hr style="color: rgb(218, 218, 218); margin-top: 20px; margin-bottom: 20px;">
+
+            <div class="shareCourse">
+              <h6 style="margin-top:20px; margin-bottom: 20px; color: #003A5E;"> شارك الدورة : </h6>
+              <ul style="list-style: none; padding: 0px; text-align: center; margin-top: 30px; margin-bottom: 40px;">
+
+                <li style="  margin-top: 20px; display: inline-block; margin-left: 10px;  ">
+                  <a href="" style="text-decoration: none; color: #acacac;">
+                    <span style=" border: 1px solid #acacac; padding: 15px 15px; border-radius: 8px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+
+                <li style=" margin-top: 20px; display: inline-block; margin-left: 10px;">
+                  <a href="" style="text-decoration: none; color: #acacac;">
+                    <span style=" border: 1px solid #acacac; padding: 15px 15px; border-radius: 8px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+
+                <li style=" margin-top: 20px; display: inline-block; margin-left: 10px;">
+                  <a href="" style="text-decoration: none; color: #acacac;">
+                    <span style=" border: 1px solid #acacac; padding: 15px 15px; border-radius: 8px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                          d="M18.901 1.153h3.682l-8.029 9.992L24 22.846h-7.406l-6.19-7.728L3.298 22.846H.215l8.031-10.03L0 1.153h7.625l5.127 6.848zm-1.892 2.923L6.442 20.4H4.379l13.623-16.324h-2.993z" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+
+                <li style=" margin-top: 20px; display: inline-block; margin-left: 10px;">
+                  <a href="" style="text-decoration: none; color: #acacac;">
+                    <span style=" border: 1px solid #acacac; padding: 15px 15px; border-radius: 8px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+
+              </ul>
+            </div><!-- end share course -->
+
+          </div><!-- end box buy -->
+
+          <div class="boxtest d-none d-lg-block"
+            style="width:100%; padding: 20px; border: 1px solid rgb(224, 224, 224); margin-top: 30px; position: sticky; top: 5px; border-radius: 8px; padding: 20px;">
+            <img src="images/coo/COMICMAN.png" alt="" srcset="" class="img-fluid"
+              style="width: 60%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            <a href=""
+              style="background-color: #ff9900; color: #003A5E; text-align: center; font-size: 16px; font-weight: 700;  padding: 20px; text-decoration: none; width: 100%; display: block; border-radius: 8px; margin-top: 20px;">اشترك
+              الأن</a>
+          </div>
+        </div><!-- end col lg 4 -->
+
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div> <!-- end coursePg -->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <div
+    class="fixed-bottom d-flex d-lg-none bg-white border-top shadow-lg p-2 justify-content-between align-items-center">
+
+    <div class="price-section ms-2">
+      <div class="text-muted small">
+        <del>السعر الأصلي: <s>500.00 ريال</s></del>
+      </div>
+      <div class="text-dark fw-bold fs-4" style="color: #003A5E !important;">
+        350.00 ريال
+      </div>
+    </div>
+
+    <div class="button-section">
+      <button class="btn btn-warning fw-bold py-2 px-4 rounded-3 text-white"
+        style="background-color: #ff9900; border-color: #ff9900;">
+        اشتري الآن
+      </button>
+    </div>
+
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const containers = document.querySelectorAll('.youtube-container');
+
+      containers.forEach(container => {
+        const videoId = container.dataset.videoid;
+
+        // 1. تحديد رابط الصورة المصغرة (أعلى جودة)
+        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+        const thumbnailElement = container.querySelector('.youtube-thumbnail');
+
+        // تطبيق الصورة المصغرة كخلفية
+        thumbnailElement.style.backgroundImage = `url('${thumbnailUrl}')`;
+
+        // 2. إضافة مُستمع حدث النقر
+        container.addEventListener('click', function () {
+          // إنشاء عنصر iframe لمشغل يوتيوب
+          const iframe = document.createElement('iframe');
+          iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
+          iframe.setAttribute('frameborder', '0');
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+          iframe.setAttribute('allowfullscreen', 'true');
+
+          // 3. استبدال محتويات الحاوية بمشغل الفيديو
+          container.innerHTML = '';
+          container.appendChild(iframe);
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
